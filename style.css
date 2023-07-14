@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  outline: none;
+  height: 40px;
+  color: #333;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.editInput {
+  margin: 0 !important;
+}
+.lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 35px;
+  padding-bottom: 30px;
+  height: fit-content;
+}
+
+.title {
+  background-color: #81cf87;
+  color: #f2f2f2;
+  font-weight: bolder;
+  justify-content: center;
+  outline: none;
+  padding-left: 114px;
+  padding-right: 114px;
+}
+
+i {
+  color: #dcdcdc;
+  align-self: center;
+  cursor: pointer;
+}
+
+.fa-square:hover {
+  color: #81cf87;
+}
+
+.fa-xmark:hover {
+  color: #d86666;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #737373;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  outline: 1px solid #dfe6e9;
+  max-width: 315px;
+  justify-content: space-between;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 200, "opsz" 20;
+}
+
+.--done {
+  text-decoration-line: line-through;
+  color: #dcdcdc;
+}
+
+p {
+  cursor: pointer;
+}
+@media screen and (max-width: 770px) {
+  .lists {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
